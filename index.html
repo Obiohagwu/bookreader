@@ -1,0 +1,55 @@
+<!-- templates/index.html (HTML/CSS/JavaScript front end) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Reader</title>
+    <style>
+        body {
+            font-family: 'Frutiger', Arial, sans-serif;
+            background-color: #e0e0e0;
+            color: #333333;
+            text-align: center;
+        }
+
+        .upload-box {
+            border: 2px dashed #333333;
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .upload-box input[type="file"] {
+            display: none;
+        }
+
+        .upload-btn {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .upload-btn:hover {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the book reader app</h1>
+    <div class="upload-box">
+        <label for="file-upload">Upload Book Here</label>
+        <input type="file" id="file-upload">
+        <button class="upload-btn" onclick="uploadBook()">Upload</button>
+    </div>
+    <script>
+        function uploadBook() {
+            // Implement upload logic here
+            console.log('Upload button clicked');
+        }
+    </script>
+</body>
+</html>
